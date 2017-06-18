@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="file.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="date">
+        <div class="top">
+            <input type="button" , value="Добавить" />
+            <input type="button" , value="Обновить" />
+            <div class="search_icon"></div>
+            <input type="search" placeholder="Событие, дата или участник" onkeypress=search()>
+        </div>
+
+
+        <div class="container">
+
+            <div class="controls">
+                <p class="next label" onclick="nextMonth()">
+                    <i class="fa fa-arrow-right"></i></p>
+
+                <p class="previous label" onclick="previousMonth()">
+                    <i class="fa fa-arrow-left"></i></p>
+
+                <a type="_button" class="_today">Сегодня</a>
+                <p id="current-month" class="label bold"></p>
+
+            </div>
+
+        </div>
+        <div class="calendar" id="calendar">
+        </div>
+    </div>
+
+</body>
+</html>
